@@ -1,0 +1,42 @@
+# Dependencies and builds
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+.vite/
+
+# Test output
+playwright-report/
+test-results/
+
+# Android
+android/.gradle/
+android/build/
+android/app/build/
+android/capacitor-cordova-android-plugins/build/
+android/local.properties
+android/.idea/
+android/app/src/main/assets/public/
+*.apk
+*.aab
+*.keystore
+*.jks
+
+# iOS
+ios/App/Pods/
+ios/App/build/
+ios/App/App/public/
+ios/DerivedData/
+xcuserdata/
+
+# Editors and OS
+.idea/
+.vscode/*
+!.vscode/extensions.json
+.DS_Store
+Thumbs.db
+
+# Local secrets and session files
+.env
+.env.*
+.claude/
