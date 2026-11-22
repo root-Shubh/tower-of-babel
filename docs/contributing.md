@@ -5,13 +5,13 @@ pull requests into `develop`. Follow these steps for every change.
 
 ## Branches
 
-| Branch | Purpose | Rules |
-|---|---|---|
-| `master` | Golden source. Released code only. | Protected |
-| `release` | Release candidate | Protected |
-| `staging` | User acceptance testing | Protected |
-| `qa` | QA | Protected |
-| `develop` | Integration. Features are merged here first. | Protected |
+| Branch              | Purpose                                            | Rules               |
+| ------------------- | -------------------------------------------------- | ------------------- |
+| `master`            | Golden source. Released code only.                 | Protected           |
+| `release`           | Release candidate                                  | Protected           |
+| `staging`           | User acceptance testing                            | Protected           |
+| `qa`                | QA                                                 | Protected           |
+| `develop`           | Integration. Features are merged here first.       | Protected           |
 | `feature-SVTOB-<n>` | One branch per Jira ticket, created from `develop` | Deleted after merge |
 
 Protected means: changes arrive only through a pull request, CI must pass on
@@ -78,7 +78,7 @@ branch.
 ## Documentation
 
 - A user-visible change updates `docs/user-guide.md` and adds an entry under
-  *Unreleased* in `CHANGELOG.md`.
+  _Unreleased_ in `CHANGELOG.md`.
 - An architecture change updates `ARCHITECTURE.md`.
 - Every milestone updates `DEVELOPMENT.md` (decisions, features, known issues,
   coverage, test results, next milestone).
