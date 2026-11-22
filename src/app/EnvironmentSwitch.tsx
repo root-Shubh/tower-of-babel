@@ -1,4 +1,4 @@
-import type { Environment } from "./App";
+import type { Environment } from "./navigation";
 
 interface Props {
   current: Environment;
