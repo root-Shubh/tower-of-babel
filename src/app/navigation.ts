@@ -34,6 +34,12 @@ export type NavigationAction =
   | { type: "saveScroll"; scrollTop: number }
   | { type: "exitHandled" };
 
+/**
+ * Scroll offset meaning "the end of the page". The browser clamps it to the real maximum,
+ * so the Tower opens at its ground floor and the explorer climbs upward.
+ */
+export const SCROLL_TO_END = 1_000_000_000;
+
 const roots: Record<Environment, Location> = {
   home: { screen: "home" },
   tower: { screen: "tower" },
@@ -44,7 +50,7 @@ export function initialNavigation(): NavigationState {
     active: "home",
     stacks: {
       home: [{ location: roots.home, scrollTop: 0 }],
-      tower: [{ location: roots.tower, scrollTop: 0 }],
+      tower: [{ location: roots.tower, scrollTop: SCROLL_TO_END }],
     },
     exitRequested: false,
   };

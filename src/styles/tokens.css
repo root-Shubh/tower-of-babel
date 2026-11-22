@@ -34,3 +34,11 @@
     --color-line: #4a3f31;
   }
 }
+
+:root {
+  --color-sky-high: #0f1a2b;
+  --color-sky-mid: #3b5576;
+  --color-sky-low: #d7b98e;
+  --color-sky-ink: #f5ecdc;
+  --color-sky-ink-muted: #d3c7b2;
+}
