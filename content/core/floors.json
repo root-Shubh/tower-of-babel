@@ -1,0 +1,164 @@
+[
+  {
+    "id": "floor_01",
+    "number": 1,
+    "title": "Primitive Survival",
+    "era": "The first needs",
+    "context": "Every human society, in every age, has started from the same four needs: safe water, warmth, shelter and food. Most of humanity's history was lived at this level, by small mobile groups who knew their land in great detail.",
+    "description": "Finding and purifying water, keeping the body warm and dry, building simple shelters, foraging, first aid in the wild, and reading weather, terrain and the night sky.",
+    "architecture": "stone"
+  },
+  {
+    "id": "floor_02",
+    "number": 2,
+    "title": "Fire, Tools and Early Materials",
+    "era": "Palaeolithic technology",
+    "context": "Control of fire and the shaping of stone, bone, wood and fibre are the oldest technologies we know of. They changed what people could eat, where they could live and what they could make.",
+    "description": "Making and keeping fire, combustion, stone toolmaking, cordage and textiles from plant fibre, hide working, adhesives and the properties of natural materials.",
+    "architecture": "stone"
+  },
+  {
+    "id": "floor_03",
+    "number": 3,
+    "title": "Agriculture and Domestication",
+    "era": "Neolithic transitions",
+    "context": "Farming began independently in several regions, including the Fertile Crescent, China, Mesoamerica, the Andes, New Guinea and sub-Saharan Africa. It reshaped diets, landscapes and societies.",
+    "description": "Seed selection and cultivation, soil and irrigation, domestication of plants and animals, food storage and preservation, and the ecological effects of farming.",
+    "architecture": "wood-and-clay"
+  },
+  {
+    "id": "floor_04",
+    "number": 4,
+    "title": "Settlements and Early Communities",
+    "era": "Villages to cities",
+    "context": "Permanent settlements brought new problems of sanitation, storage, cooperation and conflict, and new solutions to them. The first towns grew in many parts of the world over thousands of years.",
+    "description": "Sanitation and waste, pottery and ceramics, building with earth and timber, community organisation, early social structures, ritual and shared memory.",
+    "architecture": "wood-and-clay"
+  },
+  {
+    "id": "floor_05",
+    "number": 5,
+    "title": "Metallurgy and Craftsmanship",
+    "era": "Copper, bronze and iron",
+    "context": "Working native copper, then smelting ore, then alloying bronze and forging iron, gave societies stronger tools and weapons, and made long-distance trade in ores essential.",
+    "description": "Ores and their identification, furnaces and smelting, copper and bronze, ironworking, woodworking, weaving, glass and specialised crafts.",
+    "architecture": "brick-and-bronze"
+  },
+  {
+    "id": "floor_06",
+    "number": 6,
+    "title": "Mathematics, Writing and Record Keeping",
+    "era": "Counting and signs",
+    "context": "Tallies, tokens and knotted cords preceded writing. Full writing systems arose separately in Mesopotamia, Egypt, China and Mesoamerica, often for accounting first.",
+    "description": "Counting systems, arithmetic, geometry and measurement, calendars, the world's writing systems, writing materials and the keeping of records and archives.",
+    "architecture": "brick-and-bronze"
+  },
+  {
+    "id": "floor_07",
+    "number": 7,
+    "title": "Architecture and Civil Engineering",
+    "era": "Monumental building",
+    "context": "From the ziggurats and pyramids to Roman aqueducts, Andean terraces and Chinese canals, large works demanded surveying, materials science and the organisation of labour.",
+    "description": "Structural principles, masonry and arches, roads, bridges, aqueducts and canals, surveying, harbours and the planning of cities.",
+    "architecture": "classical"
+  },
+  {
+    "id": "floor_08",
+    "number": 8,
+    "title": "Medicine and Human Biology",
+    "era": "Healing traditions",
+    "context": "Every culture developed healing practices. Some, like hygiene and wound care, hold up well; many do not. This floor separates historical practice from modern evidence.",
+    "description": "Human anatomy and physiology, hygiene, wound care, herbal medicine and its limits, nutrition, childbirth, and the history of medical traditions around the world.",
+    "architecture": "classical"
+  },
+  {
+    "id": "floor_09",
+    "number": 9,
+    "title": "Trade, Economics and Governance",
+    "era": "States and exchange",
+    "context": "Exchange networks such as the Silk Roads, the Indian Ocean trade and trans-Saharan caravans linked distant societies, while states developed law, taxation and administration.",
+    "description": "Barter, money and markets, trade routes, law and justice, forms of government, taxation and public administration, diplomacy and war.",
+    "architecture": "medieval"
+  },
+  {
+    "id": "floor_10",
+    "number": 10,
+    "title": "Classical Science and Philosophy",
+    "era": "Questions about the world",
+    "context": "Systematic inquiry flourished in Greece, India, China, the Islamic world and elsewhere, preserved and extended across centuries in libraries, houses of wisdom and observatories.",
+    "description": "Natural philosophy, logic and ethics, astronomy and observatories, optics, early physics, classical mathematics, and the transmission of knowledge between civilizations.",
+    "architecture": "medieval"
+  },
+  {
+    "id": "floor_11",
+    "number": 11,
+    "title": "Advanced Agriculture and Manufacturing",
+    "era": "Productivity before industry",
+    "context": "Crop rotation, improved ploughs, water and wind power and organised workshops greatly increased output well before the factory age.",
+    "description": "Crop rotation and fertility, water mills and windmills, workshops and guilds, textiles, paper and printing, and pre-industrial manufacturing.",
+    "architecture": "medieval"
+  },
+  {
+    "id": "floor_12",
+    "number": 12,
+    "title": "Mechanical Engineering and Industrialization",
+    "era": "Engines and factories",
+    "context": "Steam power, machine tools and interchangeable parts transformed production in the eighteenth and nineteenth centuries, with large social and environmental consequences.",
+    "description": "Simple machines and mechanisms, steam engines, machine tools, iron and steel production, railways, factories, and the social history of industrialization.",
+    "architecture": "industrial"
+  },
+  {
+    "id": "floor_13",
+    "number": 13,
+    "title": "Chemistry, Physics and Modern Medicine",
+    "era": "The experimental sciences",
+    "context": "Quantitative experiment, atomic theory and germ theory gave humanity predictive control over matter and disease.",
+    "description": "Elements and reactions, thermodynamics, light and sound, atomic structure, germ theory, vaccination, anaesthesia and surgery, and public health.",
+    "architecture": "industrial"
+  },
+  {
+    "id": "floor_14",
+    "number": 14,
+    "title": "Electricity and Telecommunications",
+    "era": "Current and signal",
+    "context": "Understanding electricity and magnetism led to electric power, the telegraph, the telephone and radio, connecting the world within a few decades.",
+    "description": "Charge, current, voltage and resistance, circuits, magnetism and induction, generators and motors, power grids, telegraph, telephone and radio.",
+    "architecture": "modern"
+  },
+  {
+    "id": "floor_15",
+    "number": 15,
+    "title": "Modern Engineering and Transportation",
+    "era": "Twentieth-century engineering",
+    "context": "Internal combustion, flight, reinforced concrete and large-scale infrastructure changed how people live, travel and build.",
+    "description": "Internal combustion engines, automobiles, aviation, shipping, reinforced concrete and steel structures, water and energy infrastructure.",
+    "architecture": "modern"
+  },
+  {
+    "id": "floor_16",
+    "number": 16,
+    "title": "Computing and Information Technology",
+    "era": "The information age",
+    "context": "From counting aids and mechanical calculators to electronic computers and networks, computing turned information itself into a technology.",
+    "description": "The history of computing, logic and algorithms, digital electronics, programming, data storage, networks and the preservation of digital knowledge.",
+    "architecture": "modern"
+  },
+  {
+    "id": "floor_17",
+    "number": 17,
+    "title": "Advanced Biology and Biotechnology",
+    "era": "Life understood",
+    "context": "Evolutionary theory, genetics and molecular biology explain how living things work and change, and give powerful and contested tools to alter them.",
+    "description": "Cells, evolution, genetics and DNA, microbiology, ecology, modern agriculture, biotechnology and its ethical questions.",
+    "architecture": "advanced"
+  },
+  {
+    "id": "floor_18",
+    "number": 18,
+    "title": "Modern Science and Space Exploration",
+    "era": "The frontier",
+    "context": "Relativity, quantum physics and space flight opened the scales of the very small and the very large, and showed Earth as one small world.",
+    "description": "Relativity and quantum physics, materials science, Earth and climate science, astronomy and cosmology, rocketry and space exploration.",
+    "architecture": "advanced"
+  }
+]
