@@ -1,0 +1,61 @@
+name: CI
+
+on:
+  push:
+    branches: [develop, qa, staging, release, master]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  # Job id "ci" + matrix gives the check names required by the branch ruleset:
+  # "ci (ubuntu-latest)", "ci (windows-latest)", "ci (macos-latest)".
+  ci:
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm run lint
+      - run: npm run format:check
+      - run: npm test
+      - run: npm run check:changelog
+      - run: npm run build
+
+      # Android debug build on Linux.
+      - if: runner.os == 'Linux'
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+      - if: runner.os == 'Linux'
+        name: Android assembleDebug
+        run: |
+          npx cap sync android
+          cd android
+          ./gradlew --no-daemon assembleDebug
+
+      # iOS simulator build on macOS (no signing).
+      - if: runner.os == 'macOS'
+        name: iOS simulator build
+        run: |
+          npx cap sync ios
+          xcodebuild -project ios/App/App.xcodeproj -scheme App -configuration Debug \
+            -sdk iphonesimulator -destination 'generic/platform=iOS Simulator' \
+            CODE_SIGNING_ALLOWED=NO build | tail -n 40
