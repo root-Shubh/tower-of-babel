@@ -16,3 +16,6 @@ All notable changes to The Tower of Babel are recorded here. The format follows
 - Navigation history: the Tower and the Home Base each remember where you were, back
   restores the exact screen and scroll position, and the Android back button walks the
   history instead of closing the app (SVTOB-17).
+- The Tower: an 18-storey illustrated building that opens at the ground floor and tapers as
+  you climb, with materials changing from rough stone to glass and research panels. Tap any
+  floor to enter it; visited floors are marked and remembered (SVTOB-18).

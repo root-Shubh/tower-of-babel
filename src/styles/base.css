@@ -51,10 +51,13 @@ button {
   overflow-y: auto;
 }
 
-.home,
-.tower {
+.home {
   padding: var(--space-5) var(--space-3);
   max-width: 720px;
+  margin: 0 auto;
+}
+
+.tower {
   margin: 0 auto;
 }
 
@@ -96,4 +99,204 @@ button {
   color: var(--color-ink);
   font-weight: 600;
   box-shadow: inset 0 3px 0 var(--color-accent);
+}
+
+/* ---- Tower (SVTOB-18) ---- */
+
+.tower {
+  max-width: 560px;
+  padding: 0 var(--space-3) 0;
+  background: linear-gradient(
+    to bottom,
+    var(--color-sky-high) 0%,
+    var(--color-sky-mid) 45%,
+    var(--color-sky-low) 100%
+  );
+  min-height: 100%;
+}
+
+.tower__sky {
+  text-align: center;
+  padding: var(--space-5) 0 0;
+}
+
+.tower__sky .tower__title {
+  color: var(--color-sky-ink);
+}
+
+.tower__sky .tower__lede {
+  color: var(--color-sky-ink-muted);
+  margin-bottom: var(--space-4);
+}
+
+.tower__spire {
+  width: 0;
+  height: 0;
+  margin: 0 auto;
+  border-left: 70px solid transparent;
+  border-right: 70px solid transparent;
+  border-bottom: 90px solid #5a6f84;
+  filter: drop-shadow(0 -4px 10px rgba(255, 214, 150, 0.35));
+}
+
+.tower__floors {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tower__storey {
+  min-width: 260px;
+}
+
+.storey {
+  position: relative;
+  display: block;
+  width: 100%;
+  min-height: 150px;
+  padding: 0;
+  border: 0;
+  border-bottom: 4px solid rgba(0, 0, 0, 0.35);
+  background: none;
+  text-align: left;
+  color: inherit;
+  overflow: hidden;
+}
+
+.storey .facade {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.storey__plaque {
+  position: absolute;
+  left: 8px;
+  right: 8px;
+  bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 4px 10px;
+  border-radius: var(--radius);
+  background: rgba(20, 16, 12, 0.72);
+  color: #f6efe2;
+}
+
+.storey__number {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  font-weight: 700;
+  min-width: 2ch;
+}
+
+.storey__text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  flex: 1;
+}
+
+.storey__title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.storey__era {
+  font-size: 0.8rem;
+  color: #d8ccb6;
+}
+
+.storey__visited {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: #d9a35b;
+  color: #1c1712;
+}
+
+.storey[data-visited="false"] .facade {
+  filter: saturate(0.55) brightness(0.92);
+}
+
+.storey:active .facade {
+  filter: brightness(1.12);
+}
+
+.tower__ground {
+  height: 56px;
+  margin: 0 calc(-1 * var(--space-3));
+  background: linear-gradient(to bottom, #5c4a36, #3d3024);
+}
+
+/* ---- Floor interior ---- */
+
+.floor__banner {
+  height: 120px;
+}
+
+.floor__banner .facade {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.floor__body {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: var(--space-3) var(--space-3) var(--space-5);
+}
+
+.floor__kicker {
+  margin: var(--space-3) 0 var(--space-1);
+  color: var(--color-ink-muted);
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+}
+
+.floor__title {
+  font-size: var(--text-title);
+  margin: 0 0 var(--space-3);
+}
+
+.floor__context {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+}
+
+.floor__heading {
+  font-size: 1.25rem;
+  margin: var(--space-4) 0 var(--space-2);
+}
+
+.floor__note {
+  color: var(--color-ink-muted);
+  font-style: italic;
+  border-left: 3px solid var(--color-line);
+  padding-left: var(--space-3);
+}
+
+.text-action {
+  background: none;
+  border: 0;
+  padding: 0;
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .app__main {
+    scroll-behavior: auto;
+  }
+  .storey .facade {
+    transition: filter 160ms ease-out;
+  }
 }
