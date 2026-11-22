@@ -11,3 +11,5 @@ All notable changes to The Tower of Babel are recorded here. The format follows
 - Repository set-up: licence, contributing guide, pull request template (SVTOB-9).
 - App skeleton: Capacitor 8, React 19 and TypeScript 6 for Android and iOS. Opens in the
   Home Base and switches to the Tower at any time. No network permission (SVTOB-10).
+- The Tower's 18 floors, from Primitive Survival to Modern Science and Space Exploration,
+  with era, context and architecture for each (SVTOB-14).

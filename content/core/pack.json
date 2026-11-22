@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 1,
+  "id": "core",
+  "version": "0.1.0",
+  "title": "The Tower of Babel: core library",
+  "description": "The Tower's floor structure. Subjects, topics and books are added by the Phase 7 content tickets.",
+  "dependencies": []
+}
